@@ -6,23 +6,23 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions: read-all
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      
-    env:
-      DISPLAY: ":99.0"
+      # Needed to upload the results to code-scanning dashboard.
+      security-events: write
+      # Needed to publish results and get a badge (see publish_results below).
+      id-token: write
+    
       
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 21
-      uses: actions/setup-java@v4
-      with:
-        java-version: '21'
-        distribution: 'temurin'
+      with:  
+        persist-credentials: false
 
     - name: "Run analysis"
       uses: ossf/scorecard-action@v2.4.1
