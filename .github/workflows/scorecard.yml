@@ -25,7 +25,7 @@ jobs:
         distribution: 'temurin'
 
     - name: "Run analysis"
-      uses: ossf/scorecard-action@v2
+      uses: ossf/scorecard-action
       with:
         results_file: results.sarif
         results_format: sarif
