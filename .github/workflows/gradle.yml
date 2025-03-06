@@ -19,7 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
+      
+    env:
+      DISPLAY: ":99.0"
+      
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 21
@@ -35,6 +38,9 @@ jobs:
       with:
         gradle-version: "8.10"
 
+    - name: Start Xvfb
+      run: Xvfb $DISPLAY -ac -screen 0 1660x1200x24 > /dev/null 2>&1 &
+
     - name: Build with Gradle
       run: gradle build
 
@@ -47,7 +53,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: "Clock"
-        path: "app/build/reports/tests/test/index.html"
+        path: app/build/reports/tests
         #
         # - name: Build with Gradle 8.9
         #   run: gradle build
