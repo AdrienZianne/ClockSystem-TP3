@@ -1,4 +1,4 @@
-![gradle badge](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/gradle.yml/badge.svg) [![pmd](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/pmd.yml/badge.svg)](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/pmd.yml)
+![gradle badge](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/gradle.yml/badge.svg) [![pmd](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/pmd.yml/badge.svg)](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/pmd.yml) [![CodeQL Advanced](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/codeql.yml/badge.svg)](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/codeql.yml)
 
 # ClockSystem
 
