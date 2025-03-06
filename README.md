@@ -1,4 +1,4 @@
-https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/gradle.yml/badge.svg
+![gradle badge](https://github.com/AdrienZianne/ClockSystem-TP3/actions/workflows/gradle.yml/badge.svg)
 
 # ClockSystem
 
